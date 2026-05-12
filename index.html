@@ -1,3 +1,4 @@
+<!-- index.html - paste the complete code below -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,12 @@
     <meta name="keywords" content="Wild Little Pets, lizard care, gecko problems, hedgehog advice, exotic pet solutions, reptile care">
     <meta name="author" content="Wild Little Pets">
     <meta name="robots" content="index, follow">
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://wildlittlepets.github.io/">
-    <!-- Open Graph / Social -->
     <meta property="og:title" content="Wild Little Pets - Expert Pet Solutions">
     <meta property="og:description" content="Professional problem-solving blogs for wild & exotic pets. Get expert advice on lizards, geckos, hedgehogs and more.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wildlittlepets.github.io/">
     <meta property="og:image" content="https://wildlittlepets.github.io/logo.png">
-    <!-- Schema.org markup for Organization & WebSite -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -24,338 +22,61 @@
         "name": "Wild Little Pets",
         "url": "https://wildlittlepets.github.io/",
         "logo": "https://wildlittlepets.github.io/logo.png",
-        "sameAs": [
-            "https://www.pinterest.com/WildLittlePets/",
-            "https://wa.me/923558137077"
-        ],
-        "description": "Expert problem-solving and care guides for wild and exotic pets including lizards, geckos, hedgehogs and more.",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "url": "https://wa.me/923558137077"
-        }
+        "sameAs": ["https://www.pinterest.com/WildLittlePets/", "https://wa.me/923558137077"],
+        "description": "Expert problem-solving and care guides for wild and exotic pets including lizards, geckos, hedgehogs and more."
     }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-            background-color: #fefcf5;
-            color: #1e2a1a;
-            line-height: 1.5;
-        }
-
-        /* Dark Green & White Theme */
-        :root {
-            --dark-green: #0f3b2c;
-            --deep-green: #1a5a41;
-            --light-mint: #e9f3ef;
-            --white: #ffffff;
-            --soft-gray: #f8f9fa;
-            --shadow-sm: 0 8px 20px rgba(0,0,0,0.05);
-            --shadow-hover: 0 12px 28px rgba(0,0,0,0.1);
-        }
-
-        /* Header & Navigation */
-        .header {
-            background: var(--dark-green);
-            color: white;
-            padding: 0.8rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .nav-container {
-            max-width: 1300px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-img {
-            height: 48px;
-            width: auto;
-            max-width: 140px;
-            object-fit: contain;
-        }
-
-        .site-name {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.3px;
-            color: white;
-        }
-
-        /* Desktop nav */
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.2s;
-            font-size: 1rem;
-        }
-
-        .nav-links a:hover {
-            color: #c6f7d0;
-            transform: translateY(-1px);
-        }
-
-        /* Mobile menu button */
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-
-        /* Responsive mobile nav */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: system-ui, 'Segoe UI', 'Roboto', sans-serif; background-color: #fefcf5; color: #1e2a1a; line-height: 1.5; }
+        :root { --dark-green: #0f3b2c; --deep-green: #1a5a41; --white: #ffffff; }
+        .header { background: var(--dark-green); padding: 0.8rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1300px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+        .logo-area { display: flex; align-items: center; gap: 12px; }
+        .logo-img { height: 52px; width: 52px; border-radius: 50%; object-fit: cover; border: 2px solid white; background: white; }
+        .site-name { font-size: 1.5rem; font-weight: 700; color: white; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: 0.2s; }
+        .nav-links a:hover { color: #c6f7d0; }
+        .menu-toggle { display: none; background: none; border: none; color: white; font-size: 1.8rem; cursor: pointer; }
         @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-            .nav-links {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                background: var(--dark-green);
-                padding: 1rem 0;
-                margin-top: 1rem;
-                gap: 1rem;
-                border-radius: 16px;
-            }
-            .nav-links.show {
-                display: flex;
-            }
-            .nav-container {
-                flex-wrap: wrap;
-            }
+            .menu-toggle { display: block; }
+            .nav-links { display: none; width: 100%; flex-direction: column; background: var(--dark-green); padding: 1rem; margin-top: 1rem; border-radius: 16px; gap: 1rem; }
+            .nav-links.show { display: flex; }
         }
-
-        /* Hero Graphic with wild pets */
-        .hero {
-            background: linear-gradient(135deg, var(--deep-green) 0%, var(--dark-green) 100%);
-            padding: 2rem 2rem;
-            text-align: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .pet-icons {
-            font-size: 2.2rem;
-            letter-spacing: 12px;
-            margin-top: 1rem;
-            opacity: 0.9;
-        }
-
-        /* Main container */
-        .container {
-            max-width: 1300px;
-            margin: 2.5rem auto;
-            padding: 0 1.5rem;
-        }
-
-        /* Blog Grid */
-        .posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2.5rem;
-        }
-
-        /* Card styling */
-        .post-card {
-            background: var(--white);
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(15, 59, 44, 0.1);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .post-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .card-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            background-color: #e2e8e2;
-        }
-
-        .card-content {
-            padding: 1.5rem;
-            flex: 1;
-        }
-
-        .post-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--dark-green);
-            margin-bottom: 0.5rem;
-            line-height: 1.3;
-        }
-
-        .post-date {
-            font-size: 0.8rem;
-            color: #6c7a5e;
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .post-excerpt {
-            color: #2d3a2a;
-            margin-bottom: 1.2rem;
-            line-height: 1.5;
-        }
-
-        .read-more-link {
-            background: var(--dark-green);
-            color: white;
-            text-decoration: none;
-            padding: 0.55rem 1.2rem;
-            border-radius: 40px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 500;
-            transition: all 0.2s;
-            width: fit-content;
-        }
-
-        .read-more-link:hover {
-            background: #2c7657;
-            gap: 12px;
-            transform: scale(0.98);
-        }
-
-        /* Load More Button Animation & Style */
-        .load-more-container {
-            text-align: center;
-            margin: 2rem 0 3rem;
-        }
-
-        .load-more-btn {
-            background: transparent;
-            border: 2px solid var(--dark-green);
-            color: var(--dark-green);
-            padding: 12px 32px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.25s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            backdrop-filter: blur(2px);
-        }
-
-        .load-more-btn i {
-            transition: transform 0.2s;
-        }
-
-        .load-more-btn:hover {
-            background: var(--dark-green);
-            color: white;
-            transform: scale(1.02);
-            box-shadow: 0 4px 12px rgba(15,59,44,0.3);
-        }
-
-        .load-more-btn:hover i {
-            transform: translateX(4px);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--dark-green);
-            color: #ddd;
-            padding: 2rem 1.5rem;
-            margin-top: 3rem;
-            text-align: center;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .social-icons a {
-            color: white;
-            font-size: 1.8rem;
-            transition: 0.2s;
-        }
-
-        .social-icons a:hover {
-            transform: translateY(-3px);
-            color: #b9f5cf;
-        }
-
-        .footer-text {
-            font-size: 0.85rem;
-            opacity: 0.8;
-        }
-
-        /* utils */
-        .no-posts {
-            text-align: center;
-            grid-column: 1/-1;
-            font-size: 1.2rem;
-            padding: 3rem;
-        }
-
-        button {
-            background: none;
-            border: none;
-        }
+        .hero { background: linear-gradient(135deg, var(--deep-green), var(--dark-green)); padding: 2rem; text-align: center; color: white; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .pet-icons { font-size: 2rem; letter-spacing: 12px; margin-top: 1rem; opacity: 0.9; }
+        .container { max-width: 1300px; margin: 2.5rem auto; padding: 0 1.5rem; }
+        .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .post-card { background: var(--white); border-radius: 24px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.05); transition: transform 0.25s, box-shadow 0.25s; border: 1px solid rgba(15,59,44,0.1); display: flex; flex-direction: column; }
+        .post-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,0.1); }
+        .card-img { width: 100%; height: 200px; object-fit: cover; background: #e2e8e2; }
+        .card-content { padding: 1.5rem; flex: 1; }
+        .post-title { font-size: 1.4rem; font-weight: 700; color: var(--dark-green); margin-bottom: 0.5rem; }
+        .post-date { font-size: 0.8rem; color: #6c7a5e; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 6px; }
+        .post-excerpt { color: #2d3a2a; margin-bottom: 1.2rem; line-height: 1.5; }
+        .read-more-link { background: var(--dark-green); color: white; text-decoration: none; padding: 0.55rem 1.2rem; border-radius: 40px; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; transition: all 0.2s; }
+        .read-more-link:hover { background: #2c7657; gap: 12px; }
+        .load-more-container { text-align: center; margin: 2rem 0 3rem; }
+        .load-more-btn { background: transparent; border: 2px solid var(--dark-green); color: var(--dark-green); padding: 12px 32px; font-size: 1.1rem; font-weight: 600; border-radius: 50px; cursor: pointer; transition: all 0.25s; display: inline-flex; align-items: center; gap: 10px; }
+        .load-more-btn:hover { background: var(--dark-green); color: white; transform: scale(1.02); }
+        .footer { background: var(--dark-green); color: #ddd; padding: 2rem; text-align: center; margin-top: 3rem; }
+        .social-icons { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
+        .social-icons a { color: white; font-size: 1.8rem; transition: 0.2s; }
+        .social-icons a:hover { transform: translateY(-3px); color: #b9f5cf; }
+        .no-posts-msg { text-align: center; grid-column: 1/-1; padding: 3rem; font-size: 1.2rem; color: #5a6e52; }
     </style>
 </head>
 <body>
-
 <header class="header">
     <div class="nav-container">
         <div class="logo-area">
-            <img src="logo.png" alt="Wild Little Pets Logo" class="logo-img" onerror="this.onerror=null;this.src='https://placehold.co/200x60?text=WLP';">
+            <img src="logo.png" alt="Wild Little Pets Logo" class="logo-img" onerror="this.src='https://placehold.co/200x200/0f3b2c/white?text=WLP';">
             <span class="site-name">Wild Little Pets</span>
         </div>
-        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
         <div class="nav-links" id="navLinks">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -364,192 +85,66 @@
         </div>
     </div>
 </header>
-
 <section class="hero">
     <div class="hero-content">
         <h1>Wild Little Pets</h1>
         <p>Expert solutions for geckos, lizards, hedgehogs & exotic companions</p>
-        <div class="pet-icons">
-            🦎 🦔 🐍 🐸 🐢 🦎
-        </div>
+        <div class="pet-icons">🦎 🦔 🐍 🐸 🐢 🦎</div>
     </div>
 </section>
-
 <main class="container">
     <div class="posts-grid" id="postsGrid"></div>
-    <div class="load-more-container" id="loadMoreWrapper" style="display: none;">
-        <button class="load-more-btn" id="loadMoreBtn"><span>Load More Articles</span> <i class="fas fa-arrow-down"></i></button>
-    </div>
+    <div class="load-more-container" id="loadMoreWrapper" style="display: none;"><button class="load-more-btn" id="loadMoreBtn"><span>Load More Articles</span> <i class="fas fa-arrow-down"></i></button></div>
 </main>
-
 <footer class="footer">
     <div class="social-icons">
-        <a href="https://www.pinterest.com/WildLittlePets/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-        <a href="https://wa.me/923558137077" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.pinterest.com/WildLittlePets/" target="_blank"><i class="fab fa-pinterest"></i></a>
+        <a href="https://wa.me/923558137077" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
-    <div class="footer-text">
-        © 2025 Wild Little Pets — problem-solving for wild pets | Ethical care guides
-    </div>
+    <div class="footer-text">© 2025 Wild Little Pets — problem-solving for wild pets | Ethical care guides</div>
 </footer>
-
 <script>
-    // --------------------------------------------------------------
-    // BLOG POSTS DATABASE (fully editable - add new posts here)
-    // Thumbnail automatically uses the first image inside content.
-    // --------------------------------------------------------------
+    // ========== EDIT YOUR BLOG POSTS HERE ==========
     const postsData = [
-        {
-            id: 1,
-            title: "Why Is My Leopard Gecko Glass Surfing? Causes & Fixes",
-            date: "2025-02-10",
-            content: `<img src="https://placehold.co/600x400/2c5e3a/white?text=Leopard+Gecko" alt="Leopard Gecko">
-                      <p>Glass surfing is common stress behavior. Learn how to adjust habitat, temperature, and enrichment to stop this issue. Provide more hides and proper UVB lighting to calm your gecko.</p>
-                      <p>Also ensure the tank size is adequate (minimum 20 gallons for adults). Wild Little Pets recommends adding climbing branches and digital thermometers.</p>`
-        },
-        {
-            id: 2,
-            title: "Hedgehog Hibernation Attempt: Emergency Steps",
-            date: "2025-02-05",
-            content: `<img src="https://placehold.co/600x400/1f543d/white?text=Hedgehog+Care" alt="Hedgehog warming">
-                      <p>If your hedgehog feels cold and unresponsive, it may be attempting hibernation. Immediately warm them gradually using body heat. Never use direct heat lamps. We guide you through revival and prevention.</p>`
-        },
-        {
-            id: 3,
-            title: "Bearded Dragon Impaction: Natural Remedies & Signs",
-            date: "2025-01-28",
-            content: `<img src="https://placehold.co/600x400/3d6b4a/white?text=Bearded+Dragon" alt="Bearded Dragon">
-                      <p>Impaction can be fatal. Discover safe baths, belly massages, and dietary changes. Include high-fiber insects and avoid loose substrates. Wild Little Pets shares expert prevention advice.</p>`
-        },
-        {
-            id: 4,
-            title: "Crested Gecko Stuck Shed: Safe Removal Tips",
-            date: "2025-01-20",
-            content: `<img src="https://placehold.co/600x400/265c3e/white?text=Crested+Gecko" alt="Crested Gecko shed">
-                      <p>Humidity problems cause retained shed. Learn to create a sauna box, use q-tips gently, and maintain 70-80% humidity. Ensure proper supplementation to avoid future issues.</p>`
-        },
-        {
-            id: 5,
-            title: "Lizard Not Eating? Appetite Loss Solutions",
-            date: "2025-01-15",
-            content: `<img src="https://placehold.co/600x400/2b6a44/white?text=Lizard+Diet" alt="Lizard feeding">
-                      <p>Stress, parasites, or improper temperatures. Complete guide to troubleshooting feeding problems for any small reptile. Step-by-step plan to restore appetite.</p>`
-        },
-        {
-            id: 6,
-            title: "African Fat-Tailed Gecko Humidity Guide",
-            date: "2025-01-10",
-            content: `<img src="https://placehold.co/600x400/2f6847/white?text=Gecko+Humidity" alt="Humidity guide">
-                      <p>Unlike leopard geckos, African fat-tails need higher humidity. Find out ideal ranges, misting schedules, and tools to prevent respiratory infections.</p>`
-        },
-        {
-            id: 7,
-            title: "Tortoise Shell Rot: Early Detection & Healing",
-            date: "2025-01-05",
-            content: `<img src="https://placehold.co/600x400/3a7452/white?text=Tortoise+Shell" alt="Tortoise shell">
-                      <p>White spots or soft shell indicate rot. Learn antifungal treatments and habitat dryness adjustments. Wild Little Pets veterinarians approved method.</p>`
-        },
-        {
-            id: 8,
-            title: "Hermit Crab Mites: Eradicate Naturally",
-            date: "2024-12-28",
-            content: `<img src="https://placehold.co/600x400/2c6042/white?text=Crab+Mites" alt="Hermit crab">
-                      <p>Mite infestation stresses crabs. Use saltwater baths and substrate change without harsh chemicals. Safe remedies for exotic pets.</p>`
-        },
-        {
-            id: 9,
-            title: "Pacman Frog Bloated? Causes & First Aid",
-            date: "2024-12-20",
-            content: `<img src="https://placehold.co/600x400/2b6946/white?text=Pacman+Frog" alt="Bloated frog">
-                      <p>Impaction or bacterial infection. Reduce swelling with warm soaks and vet consultation. Dietary adjustments are key.</p>`
-        },
-        {
-            id: 10,
-            title: "Blue Tongue Skink Taming: Bonding Methods",
-            date: "2024-12-12",
-            content: `<img src="https://placehold.co/600x400/316d4b/white?text=Skink+Taming" alt="Blue tongue skink">
-                      <p>Hissing and huffing? Step-by-step desensitization to build trust. Use positive association and handling sessions.</p>`
-        },
-        {
-            id: 11,
-            title: "UVB Lighting Mistakes for Desert Reptiles",
-            date: "2024-12-05",
-            content: `<img src="https://placehold.co/600x400/2d6843/white?text=UVB+Lighting" alt="UVB reptile">
-                      <p>Improper UVB causes MBD. We share correct distance, bulb replacement schedule, and best brands for lizards & geckos.</p>`
-        },
-        {
-            id: 12,
-            title: "Chameleon Eye Infection: Home Treatment",
-            date: "2024-11-28",
-            content: `<img src="https://placehold.co/600x400/367a53/white?text=Chameleon+Eye" alt="Chameleon health">
-                      <p>Swollen eyes – vitamin A deficiency or debris. Saline rinses and proper gut-loading insects for complete recovery.</p>`
-        },
-        {
-            id: 13,
-            title: "Creating Bioactive Vivarium for Geckos",
-            date: "2024-11-20",
-            content: `<img src="https://placehold.co/600x400/2c6645/white?text=Bioactive+Vivarium" alt="Bioactive setup">
-                      <p>Reduce maintenance, improve mental health. Step-by-step guide with isopods and springtails. Perfect for wild little pets habitats.</p>`
-        },
-        {
-            id: 14,
-            title: "Hedgehog Quill Loss: Mites or Stress?",
-            date: "2024-11-10",
-            content: `<img src="https://placehold.co/600x400/1c543a/white?text=Hedgehog+Quills" alt="Quill loss">
-                      <p>Patchy quills? Differentiate between mites, dry skin and hormonal causes. Vet-recommended treatments and bathing tips.</p>`
-        }
+        // Example post (delete or replace with your own)
+        // {
+        //     id: 1,
+        //     title: "Why Is My Leopard Gecko Glass Surfing?",
+        //     date: "2025-02-10",
+        //     content: `<img src="https://placehold.co/600x400/2c5e3a/white?text=Leopard+Gecko"><p>Glass surfing is common stress behavior. Learn how to adjust habitat...</p>`
+        // }
     ];
-
-    // Sort posts by date (newest first)
+    // ================================================
+    
     const sortedPosts = [...postsData].sort((a,b) => new Date(b.date) - new Date(a.date));
+    function getFirstImageSrc(html) { let div=document.createElement('div'); div.innerHTML=html; let img=div.querySelector('img'); return img ? img.src : null; }
+    function generateExcerpt(html, max=110) { let div=document.createElement('div'); div.innerHTML=html; let txt=div.textContent||div.innerText||''; return txt.length>max?txt.slice(0,max).trim()+'…':txt.trim(); }
+    function formatDate(dateStr) { return new Date(dateStr).toLocaleDateString(undefined, {year:'numeric',month:'long',day:'numeric'}); }
+    function escapeHtml(str) { return str.replace(/[&<>]/g, function(m){if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;}); }
     
-    // Helper: extract first image src from HTML content
-    function getFirstImageSrc(htmlContent) {
-        const div = document.createElement('div');
-        div.innerHTML = htmlContent;
-        const img = div.querySelector('img');
-        return img ? img.src : null;
-    }
-    
-    // Helper: generate plain text excerpt from HTML (max length)
-    function generateExcerpt(htmlContent, maxLen = 110) {
-        const div = document.createElement('div');
-        div.innerHTML = htmlContent;
-        const text = div.textContent || div.innerText || '';
-        return text.length > maxLen ? text.slice(0, maxLen).trim() + '…' : text.trim();
-    }
-    
-    // Format date to readable
-    function formatDate(dateStr) {
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        return new Date(dateStr).toLocaleDateString(undefined, options);
-    }
-    
-    // Render posts cards on any container, optionally append
-    let currentDisplayCount = 0;
+    let currentCount = 0;
     const postsPerLoad = 12;
-    let isLoadingMore = false;
-    
     const postsGrid = document.getElementById('postsGrid');
-    const loadMoreWrapper = document.getElementById('loadMoreWrapper');
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const loadWrapper = document.getElementById('loadMoreWrapper');
+    const loadBtn = document.getElementById('loadMoreBtn');
     
-    function renderPosts(startIndex, count, append = false) {
-        const endIndex = Math.min(startIndex + count, sortedPosts.length);
-        const postsToRender = sortedPosts.slice(startIndex, endIndex);
-        
-        if (!append) {
-            postsGrid.innerHTML = '';
+    function renderPosts(start, count, append=false) {
+        let end = Math.min(start+count, sortedPosts.length);
+        let toRender = sortedPosts.slice(start, end);
+        if(!append) postsGrid.innerHTML = '';
+        if(sortedPosts.length === 0 && !append) {
+            postsGrid.innerHTML = '<div class="no-posts-msg"><i class="fas fa-feather-alt"></i> No posts yet. Add your first blog post in the postsData array.</div>';
+            loadWrapper.style.display = 'none';
+            return;
         }
-        
-        postsToRender.forEach(post => {
-            const thumbnailSrc = getFirstImageSrc(post.content) || 'https://placehold.co/600x400/0f3b2c/white?text=Wild+Pets';
-            const excerpt = generateExcerpt(post.content, 120);
-            const postCard = document.createElement('article');
-            postCard.className = 'post-card';
-            // Create slug from title for URL
-            const slug = encodeURIComponent(post.title.replace(/\s+/g, '-').toLowerCase());
-            postCard.innerHTML = `
-                <img class="card-img" src="${thumbnailSrc}" alt="${post.title}" loading="lazy">
+        toRender.forEach(post => {
+            let thumb = getFirstImageSrc(post.content) || 'https://placehold.co/600x400/0f3b2c/white?text=Wild+Pets';
+            let excerpt = generateExcerpt(post.content);
+            let slug = encodeURIComponent(post.title.toLowerCase().replace(/[^\w\s]/g,'').replace(/\s+/g,'-'));
+            let card = document.createElement('article');
+            card.className = 'post-card';
+            card.innerHTML = `
+                <img class="card-img" src="${thumb}" alt="${escapeHtml(post.title)}" loading="lazy">
                 <div class="card-content">
                     <h2 class="post-title">${escapeHtml(post.title)}</h2>
                     <div class="post-date"><i class="far fa-calendar-alt"></i> ${formatDate(post.date)}</div>
@@ -557,84 +152,16 @@
                     <a href="post.html?post=${slug}" class="read-more-link">Read Guide <i class="fas fa-arrow-right"></i></a>
                 </div>
             `;
-            postsGrid.appendChild(postCard);
+            postsGrid.appendChild(card);
         });
-        
-        // Show/Hide load more wrapper if needed
-        if (endIndex < sortedPosts.length) {
-            loadMoreWrapper.style.display = 'block';
-        } else {
-            loadMoreWrapper.style.display = 'none';
-        }
-        currentDisplayCount = endIndex;
+        if(end < sortedPosts.length) loadWrapper.style.display = 'block';
+        else loadWrapper.style.display = 'none';
+        currentCount = end;
     }
-    
-    function loadMorePosts() {
-        if (isLoadingMore) return;
-        isLoadingMore = true;
-        // Simulate smooth loading effect
-        loadMoreBtn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Loading...';
-        setTimeout(() => {
-            const remaining = sortedPosts.length - currentDisplayCount;
-            const toLoad = Math.min(postsPerLoad, remaining);
-            if (toLoad > 0) {
-                renderPosts(currentDisplayCount, toLoad, true);
-            }
-            loadMoreBtn.innerHTML = '<span>Load More Articles</span> <i class="fas fa-arrow-down"></i>';
-            isLoadingMore = false;
-        }, 300);
-    }
-    
-    // Helper to escape HTML
-    function escapeHtml(str) {
-        return str.replace(/[&<>]/g, function(m) {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
-            return c;
-        });
-    }
-    
-    // Initial load: first 12 posts
+    function loadMore() { let remaining = sortedPosts.length - currentCount; let toLoad = Math.min(postsPerLoad, remaining); if(toLoad>0) renderPosts(currentCount, toLoad, true); }
+    if(loadBtn) loadBtn.addEventListener('click', loadMore);
     renderPosts(0, postsPerLoad, false);
-    
-    // Load more button event
-    if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', loadMorePosts);
-    }
-    
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('mobileMenuBtn');
-    const navLinksDiv = document.getElementById('navLinks');
-    if (menuBtn) {
-        menuBtn.addEventListener('click', () => {
-            navLinksDiv.classList.toggle('show');
-        });
-    }
-
-    // Schema BlogPosting for homepage will be added dynamically? but we also add general site schema
-    // For home we already added organization. Perfect.
-    // Additional WebSite schema
-    const websiteSchema = {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Wild Little Pets",
-        "url": "https://wildlittlepets.github.io/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://wildlittlepets.github.io/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    };
-    const scriptSchema = document.createElement('script');
-    scriptSchema.type = 'application/ld+json';
-    scriptSchema.textContent = JSON.stringify(websiteSchema);
-    document.head.appendChild(scriptSchema);
+    document.getElementById('mobileMenuBtn')?.addEventListener('click',()=>{ document.getElementById('navLinks').classList.toggle('show'); });
 </script>
-
-<!-- Additional instructions for user to host custom images & logo -->
-<!-- This site is fully responsive, contains semantic markup & perfect for Adsense -->
 </body>
 </html>
