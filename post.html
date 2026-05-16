@@ -22,7 +22,6 @@
         .post-content img { max-width: 100%; border-radius: 24px; margin: 1rem 0; }
         .post-content p { margin-bottom: 1rem; }
         
-        /* Related posts styles */
         .related-section { background: white; border-radius: 32px; padding: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 2rem; }
         .related-title { font-size: 1.6rem; color: #0f3b2c; margin-bottom: 1.2rem; border-left: 5px solid #1a5a41; padding-left: 1rem; }
         .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
@@ -36,6 +35,40 @@
         
         .footer { background: #0f3b2c; color: #ddd; text-align: center; padding: 1.5rem; margin-top: 2rem; }
         @media (max-width: 640px) { .post-title { font-size: 1.6rem; } .container { margin: 1rem; } }
+        
+        /* Styles for second post */
+        .wlp-post { max-width: 780px; margin: 0 auto; font-family: Georgia, serif; font-size: 17px; line-height: 1.8; color: #2c2416; }
+        .wlp-post p { margin-bottom: 20px; }
+        .wlp-post h2 { font-size: 26px; color: #2c2416; margin: 44px 0 16px; padding-bottom: 10px; border-bottom: 2px solid #5a7a4a; font-family: Georgia, serif; }
+        .wlp-post h3 { font-size: 20px; color: #5a7a4a; margin: 32px 0 12px; font-family: Georgia, serif; }
+        .wlp-tip { background: #eef4ea; border-left: 4px solid #5a7a4a; padding: 18px 22px; border-radius: 0 6px 6px 0; margin: 24px 0; }
+        .wlp-tip strong { color: #5a7a4a; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 6px; }
+        .wlp-warn { background: #fff8f0; border-left: 4px solid #c8884a; padding: 18px 22px; border-radius: 0 6px 6px 0; margin: 24px 0; }
+        .wlp-warn strong { color: #c8884a; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 6px; }
+        .wlp-cta { background: #fdf3e7; border: 1px solid #e8c898; border-radius: 8px; padding: 22px 26px; margin: 28px 0; text-align: center; }
+        .wlp-cta .cta-title { font-size: 19px; color: #2c2416; margin-bottom: 8px; font-weight: 700; display: block; }
+        .wlp-cta p { margin-bottom: 12px; font-size: 15px; color: #7a6e5f; }
+        .wlp-btn { display: inline-block; background: #c8884a; color: #fff; text-decoration: none; padding: 13px 26px; border-radius: 4px; font-size: 15px; font-weight: 600; }
+        .wlp-btn.green { background: #5a7a4a; }
+        .wlp-budget { background: #eef4ea; border: 2px solid #5a7a4a; border-radius: 8px; padding: 24px 28px; margin: 32px 0; }
+        .wlp-budget h3 { margin: 0 0 16px; font-size: 20px; color: #5a7a4a; }
+        table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 15px; }
+        thead { background: #5a7a4a; color: #fff; }
+        thead th { padding: 12px 16px; text-align: left; }
+        tbody tr:nth-child(even) { background: #eef4ea; }
+        tbody tr:nth-child(odd) { background: #fff; }
+        tbody td { padding: 11px 16px; border-bottom: 1px solid #e0d8c8; }
+        .total-row { background: #fdf3e7 !important; font-weight: 700; color: #c8884a; }
+        .checklist { list-style: none; padding: 0; margin: 20px 0; }
+        .checklist li { padding: 10px 0 10px 36px; position: relative; border-bottom: 1px solid #e0d8c8; font-size: 16px; }
+        .checklist li:last-child { border-bottom: none; }
+        .checklist li::before { content: "☐"; position: absolute; left: 6px; color: #5a7a4a; font-size: 18px; }
+        .dont-list { list-style: none; padding: 0; margin: 16px 0; }
+        .dont-list li { padding: 8px 0 8px 28px; position: relative; border-bottom: 1px solid #e0d8c8; font-size: 15px; }
+        .dont-list li::before { content: "✗"; position: absolute; left: 4px; color: #c0392b; font-weight: 700; }
+        .wlp-disclosure { font-size: 13px; color: #7a6e5f; font-style: italic; background: #fff; border: 1px solid #e0d8c8; padding: 14px 18px; border-radius: 4px; margin: 36px 0 16px; }
+        .hero-img { width: 100%; height: auto; border-radius: 4px; margin-bottom: 32px; display: block; }
+        .article-meta { font-size: 13px; color: #7a6e5f; margin-bottom: 28px; }
     </style>
 </head>
 <body>
@@ -51,16 +84,16 @@
     <div id="relatedPostsContainer"></div>
 </main>
 <footer class="footer">
-    <p>© 2026 Wild Little Pets — Expert exotic pet guides</p>
+    <p>© 2025 Wild Little Pets — Expert exotic pet guides</p>
 </footer>
 <script>
-    // ========== BLOG POSTS DATABASE (ADD YOUR FUTURE POSTS HERE) ==========
+    // ========== BLOG POSTS DATABASE (Same as index.html) ==========
     const postsData = [
         {
             id: 1,
             title: "Bearded Dragon Care Guide for Beginners: Everything You Need to Know in 2026",
             date: "2026-01-15",
-            content: `<img src="https://ca-times.brightspotcdn.com/dims4/default/fc45ccc/2147483647/strip/true/crop/1366x911+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd8%2Fd8%2F9a56642b4a09a3b7784152b4595e%2Fbearded-dragon-happy-cage.jpg" alt="Bearded dragon in happy cage">
+            content: `<img src="https://ca-times.brightspotcdn.com/dims4/default/fc45ccc/2147483647/strip/true/crop/1366x911+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd8%2Fd8%2F9a56642b4a09a3b7784152b4595e%2Fbearded-dragon-happy-cage.jpg" alt="Bearded dragon basking">
 <p>So you just got a bearded dragon — or you're thinking about getting one. Either way, you're in the right place.</p>
 <p>Bearded dragons are one of the most popular exotic pets for a reason. They're friendly, curious, and surprisingly easy to care for once you understand what they need. But get a few things wrong early on and it can seriously affect their health.</p>
 <p>This guide covers everything a beginner needs to know — from setting up the perfect enclosure to feeding, lighting, and the exact products that make life easier for both you and your beardie.</p>
@@ -73,7 +106,8 @@
 <p>💡 Pro Tip: Glass terrariums are the most popular choice because they hold heat well and are easy to clean. Look for ones with front-opening doors — they make feeding and cleaning so much easier.</p>
 <p>👉 [Check the best bearded dragon enclosures on Amazon →] (https://amzn.to/example1)</p>
 <p><strong>Enclosure Temperature Setup</strong><br>Bearded dragons are cold-blooded, meaning they rely on external heat to regulate their body temperature. You need two temperature zones inside the enclosure:</p>
-<table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%;"><tr><th>Zone</th><th>Temperature</th></tr><tr><td>Basking spot</td><td>100–110°F (38–43°C)</td></tr>
+<table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%;"><tr><th>Zone</th><th>Temperature</th></tr>
+<tr><td>Basking spot</td><td>100–110°F (38–43°C)</td></tr>
 <tr><td>Cool side</td><td>80–85°F (27–29°C)</td></tr>
 <tr><td>Nighttime</td><td>No lower than 65°F (18°C)</td></tr>
 </table>
@@ -117,29 +151,14 @@
 <p>Got questions about your beardie? Drop them in the comments below — we read every one. 🦎</p>
 <p><em>Disclosure: This post contains affiliate links. If you purchase through our links, we may earn a small commission at no extra cost to you. We only recommend products we genuinely trust for your pet's health.</em></p>`
         },
-{
-    id: 2,
-    title: "Bearded Dragon Enclosure Setup Under $100 (2026 Beginner Guide)",
-    date: "2026-05-16",
-    content: `<div class="wlp-post">
+        {
+            id: 2,
+            title: "Bearded Dragon Enclosure Setup Under $100 (2026 Beginner Guide)",
+            date: "2026-05-16",
+            content: `<div class="wlp-post">
   <p class="article-meta">📅 Updated: May 2026 &nbsp;|&nbsp; ⏱ 8 min read &nbsp;|&nbsp; 🐾 WildLittle Pets</p>
   
-  <!-- Adsterra Ad -->
-  <div class="wlp-banner">
-    <script>
-      atOptions = {
-        'key' : '91f4c1b41ef2bc94bb0108103115b089',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
-      };
-    <\/script>
-    <script src="https://insensitiveshoweraudible.com/91f4c1b41ef2bc94bb0108103115b089/invoke.js"><\/script>
-  </div>
-
-  <!-- Hero Image (Base64) -->
-  <img class="hero-img" src="data:image/jpeg;base64,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" alt="Bearded dragon enclosure setup">
+  <img class="hero-img" src="https://dubiaroaches.com/cdn/shop/files/4x2x2-Whi_fa5419d6-d368-4395-8d0c-e4a6dc769b1f.jpg?v=1752547066" alt="Bearded dragon enclosure setup">
   
   <p>One of the first questions new bearded dragon owners ask is: <strong>"How much does it cost to set up a bearded dragon enclosure?"</strong> The internet will scare you with numbers like $300–$500. But here's the truth — if you're smart about it, you can set up a fully functional, safe enclosure for a baby bearded dragon for <strong>under $100.</strong></p>
   
@@ -154,9 +173,7 @@
   <p>Here's everything you need and what it costs if you shop smart:</p>
   
   <table>
-    <thead>
-      <tr><th>Item</th><th>Budget Option</th><th>Estimated Cost</th></tr>
-    </thead>
+    <thead><tr><th>Item</th><th>Budget Option</th><th>Estimated Cost</th></tr></thead>
     <tbody>
       <tr><td>40-Gallon Tank</td><td>Facebook Marketplace / Petco sale</td><td>$20–$35</td></tr>
       <tr><td>Basking Bulb</td><td>Halogen flood bulb (hardware store)</td><td>$5–$8</td></tr>
@@ -194,19 +211,6 @@
       <tr><td>New starter kit (tank + extras)</td><td>$60–$90</td><td>Online bundles</td></tr>
     </tbody>
   </table>
-  
-  <div class="wlp-banner">
-    <script>
-      atOptions = {
-        'key' : '91f4c1b41ef2bc94bb0108103115b089',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
-      };
-    <\/script>
-    <script src="https://insensitiveshoweraudible.com/91f4c1b41ef2bc94bb0108103115b089/invoke.js"><\/script>
-  </div>
   
   <h2>2. UVB Lighting — Do NOT Cheap Out Here</h2>
   <p>This is the one area where you <strong>cannot cut corners.</strong> Without proper UVB lighting, your bearded dragon cannot absorb calcium, which leads to Metabolic Bone Disease (MBD) — a painful and often fatal condition.</p>
@@ -293,16 +297,14 @@
     <strong>Affiliate Disclosure:</strong> This post contains affiliate links. If you purchase through our links, we may earn a small commission at no extra cost to you. We only recommend products we genuinely trust for your pet's health and safety.
   </div>
 </div>`
-}
+        }
     ];
-    // =========================================================================
+    // ============================================
 
-    // Helper functions
     function getFirstImageSrc(html) { let div=document.createElement('div'); div.innerHTML=html; let img=div.querySelector('img'); return img ? img.src : null; }
     function escapeHtml(str) { return str.replace(/[&<>]/g, function(m){if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;}); }
     function formatDate(dateStr) { return new Date(dateStr).toLocaleDateString(undefined, {year:'numeric',month:'long',day:'numeric'}); }
     
-    // Get current post from URL
     function getPostBySlug(slug) {
         return postsData.find(post => {
             let postSlug = post.title.toLowerCase().replace(/[^\w\s]/g,'').replace(/\s+/g,'-');
@@ -310,12 +312,10 @@
         });
     }
     
-    // Find related posts: match keywords from title, exclude current, max 3
     function getRelatedPosts(currentPost, max=3) {
         if (!currentPost) return [];
         let keywords = currentPost.title.toLowerCase().split(/\W+/).filter(w => w.length > 3);
         if (keywords.length === 0) keywords = ['dragon','gecko','lizard'];
-        
         let scored = postsData.filter(p => p.id !== currentPost.id).map(post => {
             let titleLow = post.title.toLowerCase();
             let score = keywords.filter(kw => titleLow.includes(kw)).length;
@@ -333,7 +333,6 @@
         return filtered.map(f => f.post);
     }
     
-    // Render related posts
     function renderRelatedPosts(relatedPosts) {
         const container = document.getElementById('relatedPostsContainer');
         if (!relatedPosts.length) { container.innerHTML = ''; return; }
@@ -357,12 +356,10 @@
         container.innerHTML = html;
     }
     
-    // Main execution
     const urlParams = new URLSearchParams(window.location.search);
     const slugParam = urlParams.get('post');
     const post = getPostBySlug(slugParam);
     const postContainer = document.getElementById('postContent');
-    const relatedContainer = document.getElementById('relatedPostsContainer');
     
     if (post) {
         postContainer.innerHTML = `
@@ -373,7 +370,6 @@
             <div class="post-content">${post.content}</div>
         `;
         document.title = `${post.title} | Wild Little Pets`;
-        // Add Schema.org BlogPosting
         let schema = { "@context": "https://schema.org", "@type": "BlogPosting", "headline": post.title, "datePublished": post.date, "author": { "@type": "Organization", "name": "Wild Little Pets" } };
         let script = document.createElement('script'); script.type = 'application/ld+json'; script.textContent = JSON.stringify(schema); document.head.appendChild(script);
         
@@ -381,9 +377,8 @@
         renderRelatedPosts(related);
     } else {
         postContainer.innerHTML = `<div style="text-align:center; padding:3rem;"><i class="fas fa-exclamation-triangle"></i> Article not found. <a href="index.html">Return to homepage</a></div>`;
-        relatedContainer.innerHTML = '';
+        document.getElementById('relatedPostsContainer').innerHTML = '';
     }
 </script>
-    <script src="https://insensitiveshoweraudible.com/31/d6/27/31d627f041dbf79dd4b7bd1e1b4c1c5e.js"></script>
 </body>
 </html>
